@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var messageLabel: UILabel!
     
+    @IBOutlet weak var messageLabel: UILabel!
     // Code below executes when the app's view first loads
     override func viewDidLoad() {
         super.viewDidLoad()
