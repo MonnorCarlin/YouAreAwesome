@@ -30,8 +30,15 @@ var index = 0
                         "You are tremendous!",
                         "You got the design skills of Jony Ive!",
                         "I can't wait to download your app!"]
+        var newIndex = -1
         
-        messageLabel.text = messages.randomElement()!
+        repeat {
+            newIndex = Int.random(in: 0..<messages.count)
+        } while index == newIndex
+        
+        index = newIndex
+        messageLabel.text = messages[index]
+//        messageLabel.text = messages.randomElement()!
         
 //        messageLabel.text = messages[index]
 //
